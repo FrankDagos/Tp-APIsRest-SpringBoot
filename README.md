@@ -78,47 +78,47 @@ A continuación, se presentan las capturas de pantalla de las pruebas realizadas
 
 Se crea un nuevo producto ("Mouse Inalámbrico") y la API responde con un código 201 y el objeto creado.
 
-![Prueba POST exitosa](capturas/post-exitoso.png)
+![Prueba POST exitosa](capturas/post-exitoso.jpg)
 
 ### 2. Prueba GET (Listado de Productos 200 OK)
 
 Se listan todos los productos de la base de datos.
 
-![Prueba GET de todos los productos](capturas/get-todos.png)
+![Prueba GET de todos los productos](capturas/get-todos.jpg)
 
 ### 3. Error de Validación 400 (POST)
 
 Se intenta crear un producto con el campo `nombre` vacío. La API responde correctamente con un error 400 y el mensaje de validación "El nombre no puede estar vacío".
 
-![Error de Validación 400](capturas/error-400.png)
+![Error de Validación 400](capturas/error-400.jpg)
 
 ### 4. Error 404 No Encontrado (GET por ID)
 
 Se intenta obtener un producto con un `id` que no existe (ej. 999). La API responde con 404 y el mensaje "Producto no encontrado con ID: 999".
 
-![Error 404 No Encontrado](capturas/error-404.png)
+![Error 404 No Encontrado](capturas/error-404.jpg)
 
 ### 5. Consola H2 (Datos Persistidos)
 
 Captura de la tabla `PRODUCTO` en la consola H2, mostrando los datos persistidos después de las operaciones de creación, actualización y eliminación.
 
-![Tabla H2 con datos](capturas/h2-tabla.png)
+![Tabla H2 con datos](capturas/h2-tabla.jpg)
 
 ### 6. Otras Pruebas de Endpoints
 
 Para validar el funcionamiento completo de la API, se incluyen pruebas adicionales:
 
 **GET por Categoría (200 OK)**
-![GET por Categoría](capturas/get-categoria.png)
+![GET por Categoría](capturas/get-categoria.jpg)
 
 **PUT - Actualización Completa (200 OK)**
-![PUT Actualización](capturas/put-producto.png)
+![PUT Actualización](capturas/put-producto.jpg)
 
 **PATCH - Actualización de Stock (200 OK)**
-![PATCH Stock](capturas/patch-stock.png)
+![PATCH Stock](capturas/patch-stock.jpg)
 
 **DELETE - Eliminación de Producto (204 No Content)**
-![DELETE Producto](capturas/delete-producto.png)
+![DELETE Producto](capturas/delete-producto.jpg)
 
 ---
 
